@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="scripts.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <head>
+        <title>Chess</title>
+    </head>
+    <body>
+        <h1 id="h">Chess</h1>
+        <div class="grid-container">
+            <div id="r1c1" class="grid-item"><img id="brook1" class="draggable brook b unmoved" src="images/brook.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r1c2" class="grid-item gray"><img id="bknight1" class="draggable bknight b" src="images/bknight.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r1c3" class="grid-item"><img id="bbishop1" class="draggable bbishop b" src="images/bbishop.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r1c4" class="grid-item gray"><img id="bqueen1" class="draggable bqueen b" src="images/bqueen.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r1c5" class="grid-item"><img id="bking" class="draggable b unmoved" src="images/bking.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r1c6" class="grid-item gray"><img id="bbishop2" class="draggable bbishop b" src="images/bbishop.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r1c7" class="grid-item"><img id="bknight2" class="draggable bknight b" src="images/bknight.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r1c8" class="grid-item gray"><img id="brook2" class="draggable brook b unmoved" src="images/brook.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+
+            <div id="r2c1" class="grid-item gray"><img id="bpawn1" class="draggable bpawn b" src="images/bpawn.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r2c2" class="grid-item"><img id="bpawn2" class="draggable bpawn b" src="images/bpawn.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r2c3" class="grid-item gray"><img id="bpawn3" class="draggable bpawn b" src="images/bpawn.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r2c4" class="grid-item"><img id="bpawn4" class="draggable bpawn b" src="images/bpawn.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r2c5" class="grid-item gray"><img id="bpawn5" class="draggable bpawn b" src="images/bpawn.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r2c6" class="grid-item"><img id="bpawn6" class="draggable bpawn b" src="images/bpawn.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r2c7" class="grid-item gray"><img id="bpawn7" class="draggable bpawn b" src="images/bpawn.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r2c8" class="grid-item"><img id="bpawn8" class="draggable bpawn b" src="images/bpawn.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+
+            <div id="r3c1" class="grid-item"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r3c2" class="grid-item gray"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r3c3" class="grid-item"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r3c4" class="grid-item gray"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r3c5" class="grid-item"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r3c6" class="grid-item gray"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r3c7" class="grid-item"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r3c8" class="grid-item gray"><span class="dot"></span><span class="ring"></span></div>
+
+            <div id="r4c1" class="grid-item gray"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r4c2" class="grid-item"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r4c3" class="grid-item gray"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r4c4" class="grid-item"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r4c5" class="grid-item gray"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r4c6" class="grid-item"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r4c7" class="grid-item gray"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r4c8" class="grid-item"><span class="dot"></span><span class="ring"></span></div>
+
+            <div id="r5c1" class="grid-item"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r5c2" class="grid-item gray"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r5c3" class="grid-item"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r5c4" class="grid-item gray"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r5c5" class="grid-item"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r5c6" class="grid-item gray"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r5c7" class="grid-item"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r5c8" class="grid-item gray"><span class="dot"></span><span class="ring"></span></div>
+
+            <div id="r6c1" class="grid-item gray"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r6c2" class="grid-item"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r6c3" class="grid-item gray"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r6c4" class="grid-item"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r6c5" class="grid-item gray"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r6c6" class="grid-item"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r6c7" class="grid-item gray"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r6c8" class="grid-item"><span class="dot"></span><span class="ring"></span></div>
+
+            <div id="r7c1" class="grid-item"><img id="wpawn1" class="draggable wpawn w" src="images/wpawn.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r7c2" class="grid-item gray"><img id="wpawn2" class="draggable wpawn w" src="images/wpawn.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r7c3" class="grid-item"><img id="wpawn3" class="draggable wpawn w" src="images/wpawn.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r7c4" class="grid-item gray"><img id="wpawn4" class="draggable wpawn w" src="images/wpawn.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r7c5" class="grid-item"><img id="wpawn5" class="draggable wpawn w" src="images/wpawn.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r7c6" class="grid-item gray"><img id="wpawn6" class="draggable wpawn w" src="images/wpawn.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r7c7" class="grid-item"><img id="wpawn7" class="draggable wpawn w" src="images/wpawn.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r7c8" class="grid-item gray"><img id="wpawn8" class="draggable wpawn w" src="images/wpawn.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+
+            <div id="r8c1" class="grid-item gray"><img id="wrook1" class="draggable wrook w unmoved" src="images/wrook.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r8c2" class="grid-item"><img id="wknight1" class="draggable wknight w" src="images/wknight.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r8c3" class="grid-item gray"><img id="wbishop1" class="draggable wbishop w" src="images/wbishop.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r8c4" class="grid-item"><img id="wqueen1" class="draggable wqueen w" src="images/wqueen.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r8c5" class="grid-item gray"><img id="wking" class="draggable w unmoved" src="images/wking.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r8c6" class="grid-item"><img id="wbishop2" class="draggable wbishop w" src="images/wbishop.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r8c7" class="grid-item gray"><img id="wknight2" class="draggable wknight w" src="images/wknight.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+            <div id="r8c8" class="grid-item"><img id="wrook2" class="draggable wrook w unmoved" src="images/wrook.png" width="72" height="72" draggable="true"><span class="dot"></span><span class="ring"></span></div>
+        </div>
+        <div id="d">
+            <button type="button" id="play">Play</button>
+            <h1 id="check">Check!</h1>
+        </div>
+        <div id="promo">
+            <button type="button" id="pqueen" onclick="gen('queen')">Queen</button>
+            <button type="button" id="pbishop" onclick="gen('bishop')">Bishop</button>
+            <button type="button" id="pknight" onclick="gen('knight')">Knight</button>
+            <button type="button" id="prook" onclick="gen('rook')">Rook</button>
+        </div>
+    </body>
+</html>
